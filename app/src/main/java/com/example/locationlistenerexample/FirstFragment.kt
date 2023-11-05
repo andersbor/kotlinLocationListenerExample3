@@ -79,7 +79,7 @@ class FirstFragment : Fragment() {
     private fun doIt() {
         fusedLocationProviderClient =
             LocationServices.getFusedLocationProviderClient(requireActivity())
-        locationRequest = LocationRequest.Builder(1).build()
+        locationRequest = LocationRequest.Builder(10).build()
         /* locationRequest = LocationRequest.create().apply {
              // Sets the desired interval for active location updates. This interval is inexact. You
              // may not receive updates at all if no location sources are available, or you may
